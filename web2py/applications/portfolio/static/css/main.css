@@ -108,7 +108,7 @@ a:hover {
   box-shadow: none;
 }
 #top-bar .main-menu li > a {
-  color: #444;
+  color: #02bdd5;
 }
 #top-bar .main-menu li {
   position: relative;
@@ -123,7 +123,7 @@ a:hover {
   text-transform: uppercase;
 }
 #top-bar .main-menu li a:hover {
-  color: #02bdd5;
+  color: #444;
 }
 .navbar-custom .nav li > a {
   position: relative;

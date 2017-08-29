@@ -13,6 +13,9 @@ def contact():
         message=request.post_vars.message
     redirect(URL('default','index'))
 
+def blog():
+    return dict()
+
 def user():
     """
     exposes:
