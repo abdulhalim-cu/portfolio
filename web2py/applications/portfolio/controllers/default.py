@@ -2,16 +2,16 @@
 
 
 def index():
-    """
-    example action using the internationalization operator T and flash
-    rendered by views/default/index.html or views/generic.html
+    return dict()
 
-    if you need a simple wiki simply replace the two lines below with:
-    return auth.wiki()
-    """
-    response.flash = T("Hello World")
-    return dict(message=T('Welcome to web2py!'))
 
+def contact():
+    if request.post_vars.submit:
+        name=request.post_vars.name
+        email=request.post_vars.email
+        subject=request.post_vars.subject
+        message=request.post_vars.message
+    redirect(URL('default','index'))
 
 def user():
     """

@@ -127,43 +127,102 @@
     ================================================== -->
     <footer id="footer">
         <div class="container">
-            <div class="col-md-8">
-               Powered by <i class="fa fa-love"></i><a href="https://abdulhalim.pythonanywhere.com">Abdul Halim</a>
+            <div class="row" id="contact">
+                <div class="col-md-8">
+                    <div class="well well-sm">
+                        <form action="{{=URL('default','contact')}}" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">
+                                            Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                            </span>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required="required" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Message</label>
+                                        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" name="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <legend><span class="glyphicon glyphicon-globe"></span> My place</legend>
+                        <address>
+                            <strong>Abdul Halim</strong><br>
+                            Road #12, House #77/A<br>
+                            Cosmopolitan, Chittagong<br>
+                            Bangladesh<br/>
+                            <abbr title="Phone"></abbr>
+                            <i class="fa fa-phone" aria-hidden="true"></i> 01516-709038<br/>
+                            <i class="fa fa-phone" aria-hidden="true"></i> 01879-480568
+                        </address>
+                        <address>
+                            <strong>Abdul Halim</strong><br>
+                            <a href="mailto:#">abdulhalim.cu10@gmail.com</a>
+                        </address>
+                    </form>
+                </div>
             </div>
-            <div class="col-md-4">
-                <!-- Social Media -->
-                <ul class="social">
-                    <li>
-                        <a href="http://facebook.com/halimapece" class="Facebook">
-                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/halimapece" class="Twitter">
-                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/abdul-halim-cu" class="Linkedin">
-                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/u/0/103423392776420732862" class="Google Plus">
-                            <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/abdulhalim-cu" class="-github">
-                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://gitlab.com/abdulhalim" class="-gitlab">
-                            <i class="fa fa-gitlab fa-2x" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-md-8">
+                   Powered by <i class="fa fa-love"></i><a href="https://abdulhalim.pythonanywhere.com">Abdul Halim</a>
+                </div>
+                <div class="col-md-4">
+                    <!-- Social Media -->
+                    <ul class="social">
+                        <li>
+                            <a href="http://facebook.com/halimapece" class="Facebook">
+                                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/halimapece" class="Twitter">
+                                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/abdul-halim-cu" class="Linkedin">
+                                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/u/0/103423392776420732862" class="Google Plus">
+                                <i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/abdulhalim-cu" class="-github">
+                                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gitlab.com/abdulhalim" class="-gitlab">
+                                <i class="fa fa-gitlab fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer> <!-- /#footer -->
